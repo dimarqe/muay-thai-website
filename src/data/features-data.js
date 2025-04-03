@@ -1,28 +1,37 @@
 import {
   ChatBubbleBottomCenterTextIcon,
+  UserGroupIcon,
+  UserIcon,
 } from "@heroicons/react/24/solid";
+
+import coachingImage from "/public/img/one-on-one-background.jpeg";
+import kidsImage from "/public/img/kids-background.png";
+import groupImage from "/public/img/group-background.png";
 
 export const featuresData = [
   {
     color: "gray",
-    title: "Awarded Agency",
-    icon: ChatBubbleBottomCenterTextIcon,
+    title: "One on One Coaching",
+    icon: UserIcon,
+    backgroundImage: coachingImage,
     description:
-      "Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.",
+      "Personalized training tailored to your skill level and goals. Improve technique, conditioning, and strategy with focused guidance from our expert trainers.",
   },
   {
     color: "gray",
-    title: "Free Revisions",
-    icon: ChatBubbleBottomCenterTextIcon,
+    title: "Kids Classes",
+    icon: UserGroupIcon,
+    backgroundImage: kidsImage,
     description:
-      "Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.",
+      "Fun and structured classes designed for kids to develop discipline, confidence, and fitness while learning the fundamentals of martial arts",
   },
   {
     color: "gray",
-    title: "Verified Company",
-    icon: ChatBubbleBottomCenterTextIcon,
+    title: "Group Sessions",
+    icon: UserGroupIcon,
+    backgroundImage: groupImage,
     description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
+      "Train alongside like-minded individuals in a open and high-energy environment. Perfect for all levels.",
   },
 ];
 

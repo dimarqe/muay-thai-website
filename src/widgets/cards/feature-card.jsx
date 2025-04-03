@@ -6,10 +6,14 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
-export function FeatureCard({ color, icon, title, description }) {
+export function FeatureCard({ color, icon, title, description, backgroundImage }) {
   return (
-    <Card className="rounded-lg shadow-lg shadow-gray-500/10">
-      <CardBody className="px-8 text-center">
+    <Card
+      className="relative overflow-hidden rounded-lg shadow-lg shadow-gray-500/10"
+      style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      <div className="absolute inset-0 bg-black/50"></div>
+      <CardBody className="relative z-10 px-8 text-center text-white">
         <IconButton
           variant="gradient"
           size="lg"
@@ -18,10 +22,10 @@ export function FeatureCard({ color, icon, title, description }) {
         >
           {icon}
         </IconButton>
-        <Typography variant="h5" className="mb-2" color="blue-gray">
+        <Typography variant="h5" className="mb-2" color="white">
           {title}
         </Typography>
-        <Typography className="font-normal text-blue-gray-600">
+        <Typography className="font-normal text-gray-200">
           {description}
         </Typography>
       </CardBody>
@@ -31,33 +35,17 @@ export function FeatureCard({ color, icon, title, description }) {
 
 FeatureCard.defaultProps = {
   color: "blue",
+  backgroundImage: "", // Default to no background image
 };
 
 FeatureCard.propTypes = {
   color: PropTypes.oneOf([
-    "blue-gray",
-    "gray",
-    "brown",
-    "deep-orange",
-    "orange",
-    "amber",
-    "yellow",
-    "lime",
-    "light-green",
-    "green",
-    "teal",
-    "cyan",
-    "light-blue",
-    "blue",
-    "indigo",
-    "deep-purple",
-    "purple",
-    "pink",
-    "red",
+    "blue-gray", "gray", "brown", "deep-orange", "orange", "amber", "yellow", "lime", "light-green", "green", "teal", "cyan", "light-blue", "blue", "indigo", "deep-purple", "purple", "pink", "red",
   ]),
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,
+  backgroundImage: PropTypes.string, // New prop for background image
 };
 
 FeatureCard.displayName = "/src/widgets/layout/feature-card.jsx";

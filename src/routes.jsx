@@ -7,25 +7,19 @@ export const routes = [
     element: <Home />,
   },
   {
-    name: "profile",
+    name: "classes",
     path: "/profile",
     element: <Profile />,
   },
   {
-    name: "Sign In",
+    name: "About",
     path: "/sign-in",
     element: <SignIn />,
   },
   {
-    name: "Sign Up",
+    name: "Contact",
     path: "/sign-up",
     element: <SignUp />,
-  },
-  {
-    name: "Docs",
-    href: "https://www.material-tailwind.com/docs/react/installation",
-    target: "_blank",
-    element: "",
   },
 ];
 
