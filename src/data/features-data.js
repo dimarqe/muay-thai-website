@@ -4,9 +4,9 @@ import {
   UserIcon,
 } from "@heroicons/react/24/solid";
 
-import coachingImage from "/public/img/one-on-one-background.jpeg";
-import kidsImage from "/public/img/kids-background.png";
-import groupImage from "/public/img/group-background.png";
+import coachingImage from "/img/one-on-one-background.jpeg";
+import kidsImage from "/img/kids-background.png";
+import groupImage from "/img/group-background.png";
 
 export const featuresData = [
   {

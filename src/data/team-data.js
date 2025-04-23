@@ -1,5 +1,5 @@
-import julienDP from "/public/img/julien-dp.jpg";
-import jamilaDP from "/public/img/team-2.jpg";
+import julienDP from "/img/julien-dp.jpg";
+import jamilaDP from "/img/team-2.jpg";
 
 
 export const teamData = [
