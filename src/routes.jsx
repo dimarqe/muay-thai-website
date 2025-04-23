@@ -9,17 +9,20 @@ export const routes = [
   {
     name: "classes",
     path: "/profile",
-    element: <Profile />,
+    //element: <Profile />,
+    element: ""
   },
   {
     name: "About",
     path: "/sign-in",
-    element: <SignIn />,
+    //element: <SignIn />,
+    element: ""
   },
   {
     name: "Contact",
     path: "/sign-up",
-    element: <SignUp />,
+    //element: <SignUp />,
+    element: ""
   },
 ];
 

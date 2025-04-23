@@ -41,6 +41,15 @@ export function Home() {
       <div style={{ marginBottom: '200px' }}></div>
       <section className="-mt-32 bg-white px-4 pb-20 pt-4">
         <div className="container mx-auto">
+          {/* <div className="-mt-8 px-4 md:px-20 md:w-5/12">
+            <Typography
+              variant="h3"
+              className="mb-3 font-bold"
+              color="blue-gray"
+            >
+              Classes Offered
+            </Typography>
+          </div> */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map(({ color, title, icon, backgroundImage, description }) => (
               <FeatureCard
@@ -69,10 +78,7 @@ export function Home() {
               </Typography>
               <br></br>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-              We’re Julien and Jamillah, founders of Negril Muay Thai. 
-In August 2020, during the uncertainty of the pandemic, we left city life in London and moved to Jamaica, seeking a deeper connection with nature and a better environment to raise our two boys. We weren’t sure exactly what we would do, but one thing was clear—our passion for combat sports.
-Both of us have trained and competed in boxing and Muay Thai. In the early years of our relationship, we were dedicated members of All Stars Boxing Gym in London. While I (Jamillah) remained in boxing, I went on to train and fight under the guidance of professional boxing trainer Earl Austin. Julien pursued Muay Thai, fighting under Team Tieu and competed in shows such as MTGP, Enfusion, Ringmaster, and several others as a K1 and Muay Thai fighter.Negril is known for its beautiful beaches, but it had no Muay Thai gyms—so we created one.  That’s how Negril Muay Thai was born. We truly believe our journey in the sport has led us here. Our gym has a special energy, opening up to lush greenery and the warm Caribbean breeze.We welcome students of all ages, from 5 to 70, helping them improve their skills and reach their goals.
-We love the community we’ve built around Muay Thai, and bringing something new to the island has been both challenging and rewarding.Beyond that, our mission is to grow Muay Thai in Jamaica, start local competitions, and one day see some Jamaican champions rise.
+              We’re Julien and Jamillah, founders of Negril Muay Thai. We left London in August 2020 during the uncertainties of the pandemic, to seek a better environment in Jamaica for our family. With a shared passion for combat sports—Julien in Muay Thai and Jamillah in boxing—an opportunity presented itself to bring Muay Thai to Negril, a place known for its beaches but lacking a gym for the sport. By drawing on our shared experience training and competing in London, we built a welcoming space that embraces students of all ages. Our mission extends beyond training; the aim is to grow Muay Thai in Jamaica, start local competitions, and one day see Jamaican champions emerge.
               </Typography>
               {/* <Button variant="filled">read more</Button> */}
             </div>
@@ -118,24 +124,24 @@ We love the community we’ve built around Muay Thai, and bringing something new
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
           <PageTitle section="" heading="Meet your trainers">
-            Having been coaches for x years, blah, blah
+            With a combined martial arts experience of over 30 years. Having competed in competition shows such as MTGP, Enfusion and Ringmaster.
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-2">
             {teamData.map(({ img, name, position, socials }) => (
               <TeamCard
                 key={name}
                 img={img}
                 name={name}
                 position={position}
-                socials={
-                  <div className="flex items-center gap-2">
-                    {socials.map(({ color, name }) => (
-                      <IconButton key={name} color={color} variant="text">
-                        <i className={`fa-brands text-xl fa-${name}`} />
-                      </IconButton>
-                    ))}
-                  </div>
-                }
+                // socials={
+                //   <div className="flex items-center gap-2">
+                //     {socials.map(({ color, name }) => (
+                //       <IconButton key={name} color={color} variant="text">
+                //         <i className={`fa-brands text-xl fa-${name}`} />
+                //       </IconButton>
+                //     ))}
+                //   </div>
+                // }
               />
             ))}
           </div>
@@ -143,7 +149,7 @@ We love the community we’ve built around Muay Thai, and bringing something new
       </section>
       <section className="relative bg-white py-24 px-4">
         <div className="container mx-auto">
-          <PageTitle section="Co-Working" heading="Build something">
+          {/* <PageTitle section="Co-Working" heading="Build something">
             Put the potentially record low maximum sea ice extent tihs year down
             to low ice. According to the National Oceanic and Atmospheric
             Administration, Ted, Scambos.
@@ -169,9 +175,9 @@ We love the community we’ve built around Muay Thai, and bringing something new
                 </Typography>
               </Card>
             ))}
-          </div>
-          <PageTitle section="Contact Us" heading="Want to work with us?">
-            Complete this form and we will get back to you in 24 hours.
+          </div> */}
+          <PageTitle section="" heading="Want to train with us?">
+            Contact us at 876-888-8888 or complete this form and we will get back to you in 24 hours.
           </PageTitle>
           <form className="mx-auto w-full mt-12 lg:w-5/12">
             <div className="mb-8 flex gap-8">
@@ -204,7 +210,7 @@ We love the community we’ve built around Muay Thai, and bringing something new
         </div>
       </section>
       <div className="bg-white">
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
