@@ -1,10 +1,6 @@
-import julienDP from "/public/img/julien-dp.jpg";
-import jamilaDP from "/public/img/team-2.jpg";
-
-
 export const teamData = [
   {
-    img: julienDP,
+    img: "/img/julien-dp.jpg",
     name: "Julien Guyonnet",
     position: "Muay Thai/K1 fighter",
     // socials: [
@@ -23,7 +19,7 @@ export const teamData = [
     // ],
   },
   {
-    img: jamilaDP,
+    img: "/img/team-2.jpg",
     name: "Jamila Guyonnet",
     position: "Boxing Coach",
     // socials: [
