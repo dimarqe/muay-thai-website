@@ -18,7 +18,7 @@ import { featuresData, teamData, contactData } from "@/data";
 export function Home() {
   return (
     <>
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+      <div id="home" className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
         <div className="absolute top-0 h-full w-full bg-[url('/img/test-background.jpg')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
@@ -39,7 +39,7 @@ export function Home() {
         </div>
       </div>
       <div style={{ marginBottom: '200px' }}></div>
-      <section className="-mt-32 bg-white px-4 pb-20 pt-4">
+      <section id="classes" className="-mt-32 bg-white px-4 pb-20 pt-4">
         <div className="container mx-auto">
           {/* <div className="-mt-8 px-4 md:px-20 md:w-5/12">
             <Typography
@@ -64,6 +64,7 @@ export function Home() {
               />
             ))}
           </div>
+          <div id="about" />
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               {/* <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
@@ -121,7 +122,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
+      <section id="trainers" className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
           <PageTitle section="" heading="Meet your trainers">
             With a combined martial arts experience of over 30 years. Having competed in competition shows such as MTGP, Enfusion and Ringmaster.
@@ -147,7 +148,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="relative bg-white py-24 px-4">
+      <section id="contact" className="relative bg-white py-24 px-4">
         <div className="container mx-auto">
           {/* <PageTitle section="Co-Working" heading="Build something">
             Put the potentially record low maximum sea ice extent tihs year down
@@ -210,7 +211,7 @@ export function Home() {
         </div>
       </section>
       <div className="bg-white">
-        {/* <Footer /> */}
+        <Footer /> 
       </div>
     </>
   );
