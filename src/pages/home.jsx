@@ -51,7 +51,7 @@ export function Home() {
             </Typography>
           </div> */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map(({ color, title, icon, backgroundImage, description }) => (
+            {featuresData.map(({ color, title, icon, backgroundImage, description, rate, schedule }) => (
               <FeatureCard
                 key={title}
                 color={color}
@@ -61,6 +61,8 @@ export function Home() {
                   className: "w-5 h-5 text-white",
                 })}
                 description={description}
+                rate={rate}
+                schedule={schedule}
               />
             ))}
           </div>

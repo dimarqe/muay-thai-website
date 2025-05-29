@@ -16,6 +16,8 @@ export const featuresData = [
     backgroundImage: coachingImage,
     description:
       "Personalized training tailored to your skill level and goals. Improve technique, conditioning, and strategy with focused guidance from our expert trainers.",
+    rate:"$4000/session, $30,000/10 sessions",
+    schedule:"Mon-Fri: 8am - 5pm"
   },
   {
     color: "gray",
@@ -24,6 +26,8 @@ export const featuresData = [
     backgroundImage: kidsImage,
     description:
       "Fun and structured classes designed for kids to develop discipline, confidence, and fitness while learning the fundamentals of martial arts",
+    rate:"$4000/session, $30,000/10 sessions",
+    schedule:"Sat: 10:45am - 11:45am"
   },
   {
     color: "gray",
@@ -32,6 +36,8 @@ export const featuresData = [
     backgroundImage: groupImage,
     description:
       "Train alongside like-minded individuals in a open and high-energy environment. Perfect for all levels.",
+    rate:"$4000/session, $30,000/10 sessions",
+    schedule:"Sat: 8am - 9:30am/9:30 - 10:30"
   },
 ];
 

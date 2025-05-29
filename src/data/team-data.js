@@ -8,8 +8,8 @@ export const teamData = [
     name: "Julien Guyonnet",
     position: "Muay Thai/K1 fighter",
     description:
-      "I began training in Muay Thai over 15 years ago — since then I've fought in promotions like MTGP, Enfusion, and Ringmaster. My style blends traditional Muay Thai with K1 techniques, focusing on sharp skills, discipline, and mental strength."
-      +"Now, my greatest reward is helping students grow—not just as fighters, but as confident, disciplined individuals in all aspects of life.",
+      "I began training in Muay Thai over 10 years ago — since then I've fought in promotions like MTGP, Enfusion, and Ringmaster. My style blends traditional Muay Thai with K1 techniques, focusing on sharp skills, discipline, and mental strength."
+      +" Now, my goal is helping students grow—not just as fighters, but as confident, disciplined individuals in all aspects of life.",
     // socials: [
     //   {
     //     color: "light-blue",
