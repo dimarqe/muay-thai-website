@@ -125,15 +125,16 @@ export function Home() {
       <section id="trainers" className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
           <PageTitle section="" heading="Meet your trainers">
-            With a combined martial arts experience of over 30 years. Having competed in competition shows such as MTGP, Enfusion and Ringmaster.
+            With a combined martial arts experience of over 30 years.
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-2">
-            {teamData.map(({ img, name, position, socials }) => (
+            {teamData.map(({ img, name, position, socials, description }) => (
               <TeamCard
                 key={name}
                 img={img}
                 name={name}
                 position={position}
+                description={description}
                 // socials={
                 //   <div className="flex items-center gap-2">
                 //     {socials.map(({ color, name }) => (
