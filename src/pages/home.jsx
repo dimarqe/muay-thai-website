@@ -14,6 +14,7 @@ import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
+import flag from "/img/jamaican-flag.jpg";
 
 export function Home() {
   return (
@@ -21,7 +22,7 @@ export function Home() {
       <div id="home" className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
         <div className="absolute top-0 h-full w-full object-cover bg-[url('/img/test-background.jpg')] bg-cover bg-center" />
         <img
-          src="/img/jamaican-flag.jpg"
+          src={flag}
           alt="Jamaican Flag"
           className="absolute top-0 left-0 w-full h-full object-cover opacity-25"
         />
