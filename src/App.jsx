@@ -10,7 +10,7 @@ function App() {
   
     React.useEffect(() => {
       const handleScroll = () => {
-        setScrolled(window.scrollY > 100);
+        setScrolled(window.scrollY > 300);
       };
   
       window.addEventListener("scroll", handleScroll);
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       {!(pathname == '/sign-in' || pathname == '/sign-up') && (
-        <div className={scrolled ? "container fixed left-2/4 z-50 mx-auto -translate-x-2/4 p-4 transition-colors duration-300 bg-black shadow-md" : "container fixed left-2/4 z-50 mx-auto -translate-x-2/4 p-4 transition-colors duration-300 bg-transparent"}>
+        <div className={scrolled ? "fixed mx-auto left-2/4 z-50 -translate-x-2/4 p-4 transition-colors duration-300 bg-black shadow-md bg-opacity-50 min-w-full lg:px-72 p-0" : "fixed mx-auto left-2/4 z-50 -translate-x-2/4 p-4 transition-colors duration-300 bg-transparent min-w-full lg:px-72 p-0"}>
           <Navbar routes={routes} />
         </div>
       )
@@ -30,7 +30,7 @@ function App() {
           ({ path, element }, key) =>
             element && <Route key={key} exact path={path} element={element} />
         )}
-        <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="*" element={<Navigate to="" replace />} />
       </Routes>
     </>
   );

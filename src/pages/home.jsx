@@ -19,7 +19,12 @@ export function Home() {
   return (
     <>
       <div id="home" className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/test-background.jpg')] bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full object-cover bg-[url('/img/test-background.jpg')] bg-cover bg-center" />
+        <img
+          src="/img/jamaican-flag.jpg"
+          alt="Jamaican Flag"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+        />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
@@ -34,11 +39,6 @@ export function Home() {
               <Typography variant="lead" color="white" className="opacity-80">
                 More than just a sport, it’s a way of life.
               </Typography>
-              <img
-                src="/img/jamaican-flag.jpg"
-                alt="Jamaican Flag"
-                className="mx-auto w-8 h-5 sm:w-12 sm:h-7 md:w-16 md:h-10 lg:w-20 lg:h-12"
-              />
             </div>
           </div>
         </div>
