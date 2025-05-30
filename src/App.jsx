@@ -1,3 +1,4 @@
+import React from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { Navbar } from "@/widgets/layout";
 import routes from "@/routes";
@@ -5,11 +6,21 @@ import routes from "@/routes";
 
 function App() {
   const { pathname } = useLocation();
+  const [scrolled, setScrolled] = React.useState(false);
+  
+    React.useEffect(() => {
+      const handleScroll = () => {
+        setScrolled(window.scrollY > 100);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
   return (
     <>
       {!(pathname == '/sign-in' || pathname == '/sign-up') && (
-        <div className="container absolute left-2/4 z-10 mx-auto -translate-x-2/4 p-4">
+        <div className={scrolled ? "container fixed left-2/4 z-50 mx-auto -translate-x-2/4 p-4 transition-colors duration-300 bg-black shadow-md" : "container fixed left-2/4 z-50 mx-auto -translate-x-2/4 p-4 transition-colors duration-300 bg-transparent"}>
           <Navbar routes={routes} />
         </div>
       )
