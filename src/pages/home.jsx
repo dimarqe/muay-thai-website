@@ -25,7 +25,7 @@ export function Home() {
           <div className="flex flex-wrap items-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
               <Typography
-                variant="h1"
+                variant="h2"
                 color="white"
                 className="mb-6 font-black"
               >
@@ -34,6 +34,11 @@ export function Home() {
               <Typography variant="lead" color="white" className="opacity-80">
                 More than just a sport, it’s a way of life.
               </Typography>
+              <img
+                src="/img/jamaican-flag.jpg"
+                alt="Jamaican Flag"
+                className="mx-auto w-8 h-5 sm:w-12 sm:h-7 md:w-16 md:h-10 lg:w-20 lg:h-12"
+              />
             </div>
           </div>
         </div>
