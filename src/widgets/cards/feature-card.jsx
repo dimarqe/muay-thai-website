@@ -61,7 +61,7 @@ export function FeatureCard({ color, icon, title, description, backgroundImage, 
           <Typography variant="h6" className="mb-2">
             Rate
           </Typography>
-          <Typography className="text-sm">{rate}</Typography>
+          <Typography className="text-sm pb-2">{rate}</Typography>
           <Typography variant="h6" className="mb-2">
             Schedule
           </Typography>
