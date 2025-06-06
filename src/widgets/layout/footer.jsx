@@ -49,7 +49,7 @@ export function Footer() {
               <span>Follow us on Instagram</span>
             </a>
             <a
-              href="https://www.airbnb.com/rooms/50518688?guests=1&adults=1&s=67&unique_share_id=04330475-a6f3-4e37-9b5b-80fb56c13d8b"
+              href="https://www.airbnb.com/rooms/1182258218618829969"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-red-500 transition-colors"

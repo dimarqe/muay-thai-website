@@ -65,9 +65,14 @@ export function Navbar({ brandName, routes, action }) {
     <MTNavbar color="transparent" className="p-3">
       <div className={openNav ? 'container mx-auto flex items-center justify-between text-white pb-4 duration-300' : 'container mx-auto flex items-center justify-between text-white duration-300'}>
         <Link to="/" className="flex items-center"> 
-          <img src={logo} alt="Logo" className="h-8 w-auto mr-2" />
-          <Typography className="mr-4 ml-2 cursor-pointer font-bold">
+          <img src={logo} alt="Logo" className="h-12 w-auto mr-2" />
+          <Typography className="mr-4 ml-2 cursor-pointer font-bold text-2xl flex items-center gap-2">
             {brandName}
+            <img
+            src="https://flagcdn.com/w40/jm.png"  // 40px wide Jamaican flag
+            alt="Jamaican Flag"
+            className="h-5 w-auto"
+          />
           </Typography>
         </Link>
         <div className="hidden lg:block">{navList}</div>
