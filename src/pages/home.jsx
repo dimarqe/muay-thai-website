@@ -187,7 +187,7 @@ export function Home() {
             ))}
           </div> */}
           <PageTitle section="" heading="Want to train with us?">
-            Contact us at 876-888-8888 or complete this form and we will get back to you in 24 hours.
+            Contact us at (876) 888-8888 or fill out the form below — we’ll get back to you within 24 hours. A 5–7 day retreat is coming up soon, so register your interest today!
           </PageTitle>
           <form className="mx-auto w-full mt-12 lg:w-5/12">
             <div className="mb-8 flex gap-8">
