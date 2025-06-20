@@ -19,7 +19,7 @@ import "../public/css/tailwind.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/muay-thai-website">
+    <BrowserRouter>
       <ThemeProvider>
         <App />
       </ThemeProvider>
