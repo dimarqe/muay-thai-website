@@ -173,9 +173,9 @@ export function Home() {
                   color="gray"
                   className="flex items-center font-normal"
                 >
-                  I agree to the
-                  <a href="#" className="font-medium transition-colors hover:text-gray-900">
-                    &nbsp;Terms and Conditions
+                  I agree to the Terms and Conditions
+                  <a href="" className="font-medium transition-colors hover:text-gray-900">
+                    &nbsp;
                   </a>
                 </Typography>
               }
