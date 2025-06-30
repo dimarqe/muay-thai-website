@@ -27,7 +27,7 @@ export const featuresData = [
     description:
       "Fun and structured classes designed for kids to develop discipline, confidence, and fitness while learning the fundamentals of martial arts",
     rate:"$4000/session, $30,000/10 sessions",
-    schedule:"Sat: 10:45am - 11:45am"
+    schedule:"Sat: 10:30am - 11:30am"
   },
   {
     color: "gray",

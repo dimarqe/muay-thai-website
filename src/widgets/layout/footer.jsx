@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { Typography } from "@material-tailwind/react";
 import { FaInstagram, FaAirbnb } from "react-icons/fa";
+import { HiLocationMarker } from "react-icons/hi";
 
 const year = new Date().getFullYear();
 
@@ -10,10 +11,7 @@ export function Footer() {
       <hr className="my-6 border-gray-300" />
       <div className="flex flex-wrap items-center justify-center md:justify-between">
         <div className="mx-auto w-full px-4 text-center">
-          <Typography
-            variant="small"
-            className="font-normal text-blue-gray-500"
-          >
+          <Typography variant="small" className="font-normal text-blue-gray-500">
             <>
               Copyright © {year} Negril Muay Thai by{" "}
               <a
@@ -37,8 +35,21 @@ export function Footer() {
             </>
           </Typography>
 
+          {/* Location */}
+          <div className="mt-6 flex justify-center">
+            <a
+              href="https://maps.app.goo.gl/Zw1AG2NmvQR4Vt2y7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-blue-gray-500 hover:text-blue-500 transition-colors"
+            >
+              <HiLocationMarker className="text-xl" />
+              <span>Located on Beaver Avenue, Westcliff Estates, Negril</span>
+            </a>
+          </div>
+
           {/* Social Links */}
-          <div className="mt-4 flex flex-col items-center gap-2 text-blue-gray-500">
+          <div className="mt-6 flex flex-col items-center gap-2 text-blue-gray-500">
             <a
               href="https://www.instagram.com/negril_muay_thai/"
               target="_blank"
